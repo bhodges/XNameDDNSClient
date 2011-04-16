@@ -1,0 +1,28 @@
+
+A simple .NET DDNS client with minimal dependencies, that can
+update an A record on XName's DNS servers.
+
+Author:         Brian Hodges
+Source:         https://github.com/bhodges/XNameDDNSClient
+License:        GPLv3 - A copy of the license can be acquired at:
+                    http://www.gnu.org/licenses/gpl-3.0.txt
+Last Modified:  2011-03-09
+
+Requires .NET 3.5 or higher.  Can be built with Visual Studio or from the command-line
+using csc:
+
+C:\Windows\Microsoft.NET\Framework\v3.5\csc.exe XNameDDNSClient.cs
+
+XNameDDNSClient is also known to work on other operating systems
+such as Linux with Mono.
+
+ 1) Import trusted root certificates with the mozroots tool.
+        $ mozroots --import --sync
+
+ 2) Compile xnameddnsclient.exe.
+        $ gmcs -r:System.Xml.Linq XNameDDNSClient.cs -out:xnameddnsclient.exe
+
+
+ To see a list of options, run xnameddnsclient.exe --help
+
+
