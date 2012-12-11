@@ -1,4 +1,3 @@
-
 A simple .NET DDNS client with minimal dependencies, that can
 update an A record on XName's DNS servers.
 
